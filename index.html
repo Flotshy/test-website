@@ -3,122 +3,109 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Meine Test-Website – GitHub Pages</title>
-  <meta name="description" content="Leichte Starter-Vorlage für GitHub Pages mit SEO, 404, Sitemap und Open Graph.">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <meta name="robots" content="index,follow">
-  <meta property="og:title" content="Meine Test-Website – GitHub Pages">
-  <meta property="og:description" content="Leichte Starter-Vorlage für GitHub Pages mit SEO, 404, Sitemap und Open Graph.">
+  <title>Startseite – SKS GABELSTAPLER</title>
+  <meta name="description" content="SKS Gabelstapler: Neugeräte, Gebrauchtgeräte, Miete, Service & Ersatzteile in Österreich.">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <meta property="og:title" content="Startseite – SKS GABELSTAPLER">
+  <meta property="og:image" content="assets/og-image.png">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="__PUBLIC_URL__">
-  <meta property="og:image" content="__PUBLIC_URL__/assets/og-image.png">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#e11d48">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: { 600: "#e11d48", 700: "#e11d48" } },
+          textColor: { skin: { base: "#2f2f2f" } }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { color: #2f2f2f; }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-900 antialiased">
-  <header class="sticky top-0 bg-white/80 backdrop-blur z-20 border-b">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="./" class="flex items-center gap-2 font-semibold">
-        <img src="assets/favicon.svg" alt="Logo" class="h-6 w-6">
-        <span>Meine Test-Website</span>
+<body class="bg-gray-50 antialiased">
+
+  <header class="sticky top-0 bg-white/90 backdrop-blur z-20 border-b">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="./" class="flex items-center gap-3 font-semibold">
+        <img src="assets/logo.png" alt="SKS Gabelstapler Logo" class="h-9 w-auto">
+        <span class="hidden sm:block">SKS GABELSTAPLER</span>
       </a>
       <nav class="hidden md:flex items-center gap-6 text-sm">
-        <a href="#features" class="hover:text-indigo-600">Funktionen</a>
-        <a href="#kontakt" class="hover:text-indigo-600">Kontakt</a>
-        <a href="#faq" class="hover:text-indigo-600">FAQ</a>
+        <a class="hover:text-brand-600" href="neugeraete.html">Neugeräte</a>
+        <a class="hover:text-brand-600" href="gebrauchtstapler.html">Gebraucht</a>
+        <a class="hover:text-brand-600" href="miete.html">Miete</a>
+        <a class="hover:text-brand-600" href="service.html">Service</a>
+        <a class="hover:text-brand-600" href="kontakt.html">Kontakt</a>
       </nav>
+      <a href="tel:+43XXXXXXXXX" class="hidden md:inline-flex px-4 py-2 rounded-xl bg-[#e11d48] text-white">Jetzt anrufen</a>
     </div>
   </header>
 
+
   <section class="relative overflow-hidden">
-    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-indigo-50 to-transparent"></div>
-    <div class="max-w-6xl mx-auto px-4 py-16 md:py-24">
-      <div class="grid md:grid-cols-2 gap-10 items-center">
-        <div>
-          <h1 class="text-4xl md:text-5xl font-bold leading-tight">
-            Willkommen auf deiner <span class="text-indigo-600">GitHub Pages</span> Test-Seite
-          </h1>
-          <p class="mt-4 text-lg text-gray-600">
-            Diese Vorlage ist optimiert für Projekt-Seiten <code>BENUTZERNAME.github.io/REPO</code> und persönliche Seiten <code>BENUTZERNAME.github.io</code>.
-          </p>
-          <div class="mt-6 flex flex-wrap gap-3">
-            <a href="#features" class="px-5 py-3 bg-indigo-600 text-white rounded-xl shadow hover:bg-indigo-700 transition">
-              Was ist drin?
-            </a>
-            <a href="#kontakt" class="px-5 py-3 border rounded-xl hover:bg-gray-100 transition">
-              Schreib mir
-            </a>
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-rose-50 to-transparent"></div>
+    <div class="max-w-7xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+          Gabelstapler & Lagertechnik<br><span class="text-[#e11d48]">kaufen · mieten · warten</span>
+        </h1>
+        <p class="mt-4 text-lg text-gray-700">
+          Lösungen für Neu‑ und Gebrauchtgeräte, Kurz‑ & Langzeitmiete sowie schnellen Service inkl. Ersatzteile & Batterieservice.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="gebrauchtstapler.html" class="px-5 py-3 bg-[#e11d48] text-white rounded-xl shadow hover:opacity-90">Gebrauchtstapler</a>
+          <a href="miete.html" class="px-5 py-3 border rounded-xl hover:bg-gray-100">Mietstapler</a>
+          <a href="service.html" class="px-5 py-3 border rounded-xl hover:bg-gray-100">Service</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl shadow p-6">
+        <dl class="grid grid-cols-2 gap-4">
+          <div class="p-4 rounded-xl bg-rose-50">
+            <dt class="text-sm text-gray-600">Standorte</dt>
+            <dd class="text-2xl font-semibold">AT</dd>
           </div>
-        </div>
-        <div class="bg-white rounded-2xl shadow p-6">
-          <ul class="space-y-3 text-gray-700">
-            <li>✅ SEO-Meta &amp; Open Graph</li>
-            <li>✅ 404-Seite für GitHub Pages</li>
-            <li>✅ <code>sitemap.xml</code> &amp; <code>robots.txt</code></li>
-            <li>✅ Saubere Ordnerstruktur</li>
-          </ul>
-        </div>
+          <div class="p-4 rounded-xl bg-rose-50">
+            <dt class="text-sm text-gray-600">Leihgeräte</dt>
+            <dd class="text-2xl font-semibold">50+</dd>
+          </div>
+          <div class="p-4 rounded-xl bg-rose-50">
+            <dt class="text-sm text-gray-600">Service-Team</dt>
+            <dd class="text-2xl font-semibold">schnell</dd>
+          </div>
+          <div class="p-4 rounded-xl bg-rose-50">
+            <dt class="text-sm text-gray-600">Marken</dt>
+            <dd class="text-2xl font-semibold">nach Wunsch</dd>
+          </div>
+        </dl>
+        <p class="text-xs text-gray-500 mt-2">Texte sind Platzhalter – bitte mit echten Daten ersetzen.</p>
       </div>
     </div>
   </section>
 
-  <section id="features" class="max-w-6xl mx-auto px-4 py-16">
-    <h2 class="text-3xl font-bold">Features</h2>
-    <div class="mt-8 grid md:grid-cols-3 gap-6">
-      <article class="bg-white rounded-2xl shadow p-6">
-        <h3 class="font-semibold">Einfach &amp; statisch</h3>
-        <p class="mt-2 text-gray-600">Kein Build-Schritt nötig – ideal für GitHub Pages.</p>
-      </article>
-      <article class="bg-white rounded-2xl shadow p-6">
-        <h3 class="font-semibold">Bereit für Social Sharing</h3>
-        <p class="mt-2 text-gray-600">Open-Graph- und Twitter-Meta-Tags sind dabei.</p>
-      </article>
-      <article class="bg-white rounded-2xl shadow p-6">
-        <h3 class="font-semibold">404 &amp; SEO</h3>
-        <p class="mt-2 text-gray-600">Eigene Fehlerseite, Sitemap &amp; Robots für Crawler.</p>
-      </article>
+  <section class="max-w-7xl mx-auto px-4 pb-16">
+    <h2 class="text-2xl font-bold">Leistungen</h2>
+    <div class="mt-6 grid md:grid-cols-3 gap-6">
+      <a href="neugeraete.html" class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition block">
+        <h3 class="font-semibold">Neugeräte</h3>
+        <p class="mt-2 text-gray-600">Elektro/Diesel/Treibgas, Lagertechnik.</p>
+      </a>
+      <a href="gebrauchtstapler.html" class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition block">
+        <h3 class="font-semibold">Gebrauchtstapler</h3>
+        <p class="mt-2 text-gray-600">Geprüft & einsatzbereit, Garantieoptionen.</p>
+      </a>
+      <a href="service.html" class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition block">
+        <h3 class="font-semibold">Service & Ersatzteile</h3>
+        <p class="mt-2 text-gray-600">Wartung, Reparatur, UVV, Batterien.</p>
+      </a>
     </div>
-  </section>
-
-  <section id="kontakt" class="max-w-6xl mx-auto px-4 pb-16">
-    <div class="bg-white rounded-2xl shadow p-6 md:p-8">
-      <h2 class="text-2xl font-bold">Kontakt</h2>
-      <p class="mt-2 text-gray-600">Formular ohne Server: öffnet dein E‑Mail‑Programm.</p>
-      <form class="mt-6" action="mailto:info@beispiel.de" method="post" enctype="text/plain">
-        <div class="grid md:grid-cols-2 gap-4">
-          <input required name="name" placeholder="Dein Name" class="border rounded-xl px-4 py-3" />
-          <input required type="email" name="email" placeholder="Deine E‑Mail" class="border rounded-xl px-4 py-3" />
-        </div>
-        <textarea required name="nachricht" placeholder="Nachricht" class="border rounded-xl px-4 py-3 w-full h-32 mt-4"></textarea>
-        <button class="mt-4 px-5 py-3 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700">Senden</button>
-      </form>
-    </div>
-  </section>
-
-  <section id="faq" class="max-w-6xl mx-auto px-4 pb-24">
-    <h2 class="text-2xl font-bold">FAQ</h2>
-    <details class="mt-4 bg-white rounded-2xl shadow p-6">
-      <summary class="cursor-pointer font-medium">Projekt-Seite zeigt Unterpfad an – ist das ok?</summary>
-      <p class="mt-2 text-gray-600">
-        Ja. Für <code>BENUTZERNAME.github.io/REPO</code> bleiben Links relativ (<code>./</code>), damit alles funktioniert.
-      </p>
-    </details>
-    <details class="mt-4 bg-white rounded-2xl shadow p-6">
-      <summary class="cursor-pointer font-medium">Wie ändere ich Titel, Farben, Texte?</summary>
-      <p class="mt-2 text-gray-600">Suche nach „Meine Test-Website“ im Code und passe Werte an. Farben kommen von Tailwind via CDN.</p>
-    </details>
   </section>
 
   <footer class="border-t py-8 text-center text-sm text-gray-500">
-    <p>© <span id="year"></span> Meine Test-Website – GitHub Pages Plus.</p>
+    <p>© <span id="year"></span> SKS GABELSTAPLER</p>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    // Ersetze __PUBLIC_URL__ automatisch, falls über einen Unterpfad aufgerufen wird
-    const publicUrl = window.location.origin + window.location.pathname.replace(/\/$/, '');
-    document.querySelectorAll('meta[property="og:url"]').forEach(m => m.setAttribute('content', publicUrl));
-    document.querySelectorAll('meta[property="og:image"]').forEach(m => m.setAttribute('content', publicUrl + '/assets/og-image.png'));
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
 </body>
 </html>

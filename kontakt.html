@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Seite nicht gefunden – SKS GABELSTAPLER</title>
+  <title>Kontakt – SKS GABELSTAPLER</title>
   <meta name="description" content="SKS Gabelstapler: Neugeräte, Gebrauchtgeräte, Miete, Service & Ersatzteile in Österreich.">
   <link rel="icon" href="assets/favicon.png" type="image/png">
-  <meta property="og:title" content="Seite nicht gefunden – SKS GABELSTAPLER">
+  <meta property="og:title" content="Kontakt – SKS GABELSTAPLER">
   <meta property="og:image" content="assets/og-image.png">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#e11d48">
@@ -45,14 +45,19 @@
   </header>
 
 
-  <section class="h-[60vh] grid place-items-center">
-    <div class="text-center">
-      <h1 class="text-6xl font-bold">404</h1>
-      <p class="mt-2 text-gray-600">Die angeforderte Seite wurde nicht gefunden.</p>
-      <a href="./" class="mt-6 inline-block px-5 py-3 bg-[#e11d48] text-white rounded-xl">Zur Startseite</a>
-    </div>
-  </section>
+  <main class="max-w-7xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-bold mb-4">Kontakt</h1>
+    
+  <p class="text-gray-700">Sende uns eine Nachricht – wir melden uns rasch.</p>
+  <form class="mt-6 max-w-xl bg-white rounded-2xl shadow p-6" action="mailto:info@sks-stapler.at" method="post" enctype="text/plain">
+    <input name="name" placeholder="Name" class="border rounded-xl px-4 py-3 w-full mb-3" required>
+    <input type="email" name="email" placeholder="E-Mail" class="border rounded-xl px-4 py-3 w-full mb-3" required>
+    <textarea name="nachricht" placeholder="Ihre Nachricht..." class="border rounded-xl px-4 py-3 w-full h-32 mb-3" required></textarea>
+    <button class="px-5 py-3 bg-[{primary}] text-white rounded-xl">Senden</button>
+  </form>
+  <p class="text-xs text-gray-500 mt-3">Für den Produktivbetrieb richten wir ein Formular mit Spam-Schutz & direktem Mailversand ein.</p>
 
+  </main>
   <footer class="border-t py-8 text-center text-sm text-gray-500">
     <p>© <span id="year"></span> SKS GABELSTAPLER</p>
   </footer>

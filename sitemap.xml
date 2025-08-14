@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>__PUBLIC_URL__/</loc>
-    <lastmod>2025-08-14T09:29:57Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>./</loc><lastmod>2025-08-14T09:46:40Z</lastmod></url>
+  <url><loc>./neugeraete.html</loc></url>
+  <url><loc>./gebrauchtstapler.html</loc></url>
+  <url><loc>./miete.html</loc></url>
+  <url><loc>./service.html</loc></url>
+  <url><loc>./kontakt.html</loc></url>
 </urlset>
